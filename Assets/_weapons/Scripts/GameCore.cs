@@ -28,7 +28,6 @@ public class GameCore : Singleton<GameCore>
     public void SelectAnimation(int value)
     {
         stats.animationSlected = value;
-
         SceneManager.LoadSceneAsync("weapons");
     }
 }

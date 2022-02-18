@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ada9d3e5cece84f9ef3d1b66e9523f, type: 3}
+  m_Name: OrbitalWeaponStats
+  m_EditorClassIdentifier: 
+  weaponName: OrbitalWeapon
+  bulletPrefab: {fileID: 4388838552890758609, guid: 8ea04f87ba7f19b49aaca35ee1dad4c3,
+    type: 3}
+  stats:
+    shootRate: 1
+    shootTime: 1
+    speed: 50
+    range: 2
+    damage: 5

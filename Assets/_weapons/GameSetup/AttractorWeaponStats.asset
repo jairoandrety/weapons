@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ada9d3e5cece84f9ef3d1b66e9523f, type: 3}
+  m_Name: AttractorWeaponStats
+  m_EditorClassIdentifier: 
+  weaponName: AttractorWeapon
+  bulletPrefab: {fileID: 4388838552890758609, guid: b6a8df42defa51c4b8906a7e5d6e4a0d,
+    type: 3}
+  stats:
+    shootRate: 1
+    shootTime: 1
+    speed: 10
+    range: 3
+    damage: 1
