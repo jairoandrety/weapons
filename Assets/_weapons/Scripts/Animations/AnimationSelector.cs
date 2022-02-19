@@ -8,13 +8,13 @@ using UnityEngine.UI;
 
 public class AnimationSelector : MonoBehaviour
 {
-    public UnityEvent OnselectAnimation;
-
     public AnimationsSetup animationsSetup;
+
     [SerializeField] private Animator animator;
     [SerializeField] private AnimationSelectorView view;
 
     private int selected = 0;
+    private AnimationSetup animationSelected = new AnimationSetup();
 
     #region UnityBehaviour
     void Start()
@@ -33,13 +33,11 @@ public class AnimationSelector : MonoBehaviour
 
         view.buttonSelectAnimation.onClick.AddListener(SelectAnimation);
     }
-
-    void Update() { }
     #endregion
 
     public void ChangeAnimation()
     {
-        AnimationSetup animationSelected = animationsSetup.Setups[selected];
+        animationSelected = animationsSetup.Setups[selected];
         animator.SetTrigger(animationSelected.animationName);
     }
 

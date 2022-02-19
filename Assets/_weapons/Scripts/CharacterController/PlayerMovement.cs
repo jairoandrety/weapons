@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
         z = Input.GetAxis("Vertical");
 
         move = transform.right * x + transform.forward * z;
-        controller.Move(move * speed * Time.deltaTime);
+        controller.Move(move * (isGrounded ? speed : speed / 2) * Time.deltaTime);
 
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-        if (Input.GetButtonDown("Fire1") && isGrounded)
+        if (Input.GetButtonDown("Fire1"))
         {
             weaponController.Shoot();
         }

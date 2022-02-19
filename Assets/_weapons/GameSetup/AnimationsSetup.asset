@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   setups:
   - animationName: house
-  - animationName: macanera
+  - animationName: macarena
   - animationName: hiphop

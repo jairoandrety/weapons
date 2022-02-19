@@ -1,9 +1,9 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AnimationViewer : MonoBehaviour
 {
     public AnimationsSetup animationsSetup;
+    AnimationSetup animationSelected = new AnimationSetup();
     [SerializeField] private Animator animator;
 
     private int selected = 0;
@@ -11,13 +11,13 @@ public class AnimationViewer : MonoBehaviour
     void Start()
     {
         selected = GameCore.Instance.stats.animationSlected;
-
-
+        ChangeAnimation();
     }
 
     public void ChangeAnimation()
     {
-        AnimationSetup animationSelected = animationsSetup.Setups[selected];
+        animationSelected = animationsSetup.Setups[selected];
+        Debug.Log(animationSelected.animationName);
         animator.SetTrigger(animationSelected.animationName);
     }
 }

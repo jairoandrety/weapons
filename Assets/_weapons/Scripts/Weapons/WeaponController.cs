@@ -18,7 +18,7 @@ public class WeaponController : MonoBehaviour
         weaponSelected.transform.localPosition = Vector3.zero;
         weaponSelected.transform.localRotation = Quaternion.Euler(Vector3.zero);
 
-        weaponSelected.GetComponent<BoxCollider>().enabled = false;
+        weaponSelected.GetComponent<Collider>().enabled = false;
     }
 
     public void Shoot()

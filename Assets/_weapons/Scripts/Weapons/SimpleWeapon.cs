@@ -45,7 +45,7 @@ public class SimpleWeapon : Weapon
         transform.SetParent(null);
         transform.position = InitPos;
         transform.rotation = Quaternion.Euler(0, 60, 0);
-        transform.GetComponent<BoxCollider>().enabled = true;
+        transform.GetComponent<Collider>().enabled = true;
 
     }
 }
